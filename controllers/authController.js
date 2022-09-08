@@ -10,7 +10,6 @@ const apiConnect = {
   api_secret: process.env.STREAM_API_SECRET,
   app_id: process.env.STREAM_APP_ID,
 };
-
 // console.log(apiConnect.app_id);
 
 const login = async (req, res) => {
