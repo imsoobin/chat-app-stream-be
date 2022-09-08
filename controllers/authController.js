@@ -11,7 +11,7 @@ const apiConnect = {
   app_id: process.env.STREAM_APP_ID,
 };
 
-console.log(apiConnect.app_id);
+// console.log(apiConnect.app_id);
 
 const login = async (req, res) => {
   try {
