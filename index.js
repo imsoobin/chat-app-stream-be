@@ -44,7 +44,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("hello world!");
 });
 
 // app.post("/", (req, res) => {
