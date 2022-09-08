@@ -30,7 +30,7 @@ const authRoutes = require("./routes/auth");
 //   });
 // });
 
-const PORT = process.env.PORT || 5001;
+// const PORT = process.env.PORT || 5001;
 
 require("dotenv").config();
 
@@ -73,5 +73,9 @@ app.post("/", (req, res) => {
 
 app.use("/auth", authRoutes);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 // server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const server = app.listen(process.env.PORT || 5001, () => {
+  const port = server.address().port;
+  console.log(`Express is working on port ${port}`);
+});
